@@ -1,0 +1,78 @@
+shell 
+  壳 用来装命令行的一些壳 
+有哪些壳 
+  cmd powershell  git bash shell 
+bash 命令
+  mkdir 创建文件夹
+  touch 创建文件 
+
+git 
+  文件版本管理工具 
+git和svn
+  git 不用联网也可以使用  分布式版本管理工具
+  svn 不联网不能用 没有本地仓库的这个概念  集中式 
+git 命令
+  git config --global user.name "用户名"
+  git config --global user.email "邮箱"
+  # 查看 用户名
+  git config  user.name 
+  # 查看 邮箱
+  git config  user.email 
+  # 初始化仓库
+  git init 
+  # 添加到暂存区
+  git  add . 
+  # 提交到本地仓库
+  git commit -m "备注"
+  # 设置远程仓库的名字和地址
+  git remote add 名字 地址
+  # 查看远程仓库名字和地址
+  git remote -v 
+  # 第一次推送
+  git push -u 名字 master
+  # 第二次推送
+  git push
+  # 克隆远程仓库
+  git clone 地址
+  # 拉取更新
+  git pull 
+  # 把仓库还原到上一次更新之后的状态
+  git  checkout  . 
+  # 还原仓库到任意的版本
+  git reset --hard commitID(最小6位)
+  # 常规查看
+  git log 
+  # 精简查看
+  git log --oneline
+  # 完全查看
+  git reflog 
+  # 创建分支
+  git branch dev
+  # 查看分支
+  git branch 
+  # 切换分支
+  git checkout dev
+  # 合并分支(需要在master下合并)
+  git merge dev 
+  # 删除分支
+  git branch -d 
+
+分支 有什么用
+方便管理项目 
+
+工作目录
+  就是我们存放代码的地方
+暂存区
+  暂时存储需要添加到本地仓库的地方
+本地仓库
+  才是实现版本管理的地方 
+远程仓库
+  让本地仓库进行共享的外网的地址 github 和码云 
+文件忽略列表
+  让git不去管理一些文件 
+
+复习和预习
+   1 课下抽空去研究ssh 不用填写用户名和密码 就可以推送的 技术 
+   2 一定要看图片再去操作!!!!!!!!!!!!
+   3 自己写ximd 总结 今天所学的git 流程 或者命令
+   4 不要担心 不要着急 git 一直使用 用到 脱离it行业!!!! 
